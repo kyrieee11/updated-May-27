@@ -1,0 +1,160 @@
+body{ 
+    margin: 0 100px 0px 100px;
+}
+html{
+    scroll-behavior: smooth;
+}
+nav{
+    background-color: rgb(255, 255, 255);
+    padding: 1%; 
+    position: fixed;  
+}
+.title{
+    display: inline-block;
+    font-family: "Dancing Script", cursive;
+}
+
+.link-container{
+    padding-inline: 22px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    margin-left: 320px;
+    top: 20px;
+}
+.link{
+    color:black;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 17px;
+    transition: 0.2s;
+}
+.link:hover{
+    color: #52CBDC;
+    
+}
+.btn-link{
+    background-color: #52CBDC;
+    padding: 10px 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    border-radius: 15px;
+    color: aliceblue;
+    transition: 0.2s;
+}
+.btn-link:hover{
+    color: rgb(0, 0, 0)   
+}
+.search-container {
+    margin: 15% 0 0 30%;
+    display: inline-block;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    padding: 5% 1%;
+    font-size: 16px;
+    border-radius: 25px 0 0 25px;
+    width: 400px;
+    height: 5px;
+}
+
+.search-button {
+    border: none;
+    background-color: #52CBDC;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0 25px 25px 0;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #52CBDC;
+}
+
+
+
+.table-container {
+    background-color: none;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #52CBDC;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+th:hover {
+    color: #030303;
+}
+
+th:after {
+    content: '';
+    position: absolute;
+    right: 10px;
+}
+
+th[data-order="asc"]:after {
+    content: '▲';
+}
+
+th[data-order="desc"]:after {
+    content: '▼';
+}
+
+tbody tr:hover {
+    background-color: #ffffff;
+}
+footer{
+    padding: 10px;
+    background-color: #52CBDC;
+    bottom: 0;
+    width: 100%;
+    margin-top: 30%;
+    
+
+}
+.footer-col .container1{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+.daett{
+    color: white;
+
+}
+.visiting{
+    
+    color: white;
+}
+.Contactt{
+    
+    color: white;
+}
+.followw{
+    color: white;
+}

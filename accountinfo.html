@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="information.css"/>
+    <title>Account Information</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+            <div class="title">
+                <h1>Daet Catholic Cemetery</h1>
+            </div>
+            <div class="link-container">
+                <a class="link" href="usernamepage.html">Home</a>
+                <a class="link" href="#about">About Cemetery</a>
+                <a class="link" href="#contact">Contact Us</a>
+                <a class="link" href="Search.html">Search</a>
+                <a class="btn-link" href="accountinfo.html">Username</a>
+            </div>
+            </nav>
+        </header>
+        
+        <main>
+            <div class="side">
+                <a href="accountinfo.html">Account Information Details</a>
+                
+            </div>
+            <div class="container">
+                <div id="output">
+                    <p><strong>First Name:</strong> <span id="outputFirstName"></span></p>
+                    <p><strong>Middle Name:</strong> <span id="outputMiddleName"></span></p>
+                    <p><strong>Last Name:</strong> <span id="outputLastName"></span></p>
+                    <p><strong>Birthday:</strong> <span id="outputBirthday"></span></p>
+                    <p><strong>Contact:</strong> <span id="outputContact"></span></p>
+                    <p><strong>Gender:</strong> <span id="outputMale"></span></p>
+                    <p><strong>Gender:</strong> <span id="outputFemale"></span></p>
+                    <p><strong>Email:</strong> <span id="outputEmail"></span></p>
+                    <p><strong>ID:</strong> <span id="outputUpload"></span></p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="contact">
+                <div class="footer-col">
+                    <div class="container1">
+                        <p class="daett">Daet Catholic<br>Cemetery Logo</p>
+                        <p class="visiting">Visiting Hours<br><br>9:00am-6:00pm</p>
+                        <p class="contactt">Contact<br><br>09123456789<br>0912345567</p>
+                        <p class="followw">Follow Us On Facebook<br><br>F. Pimentel Ave, Daet<br>4600 Camarines Norte</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Retrieve form data from localStorage
+        const firstName = localStorage.getItem('firstName');
+        const middleName = localStorage.getItem('middleName');
+        const lastName = localStorage.getItem('lastName');
+        const birthday = localStorage.getItem('birthday');
+        const contact = localStorage.getItem('contact');
+        const male = localStorage.getItem('male');
+        const female = localStorage.getItem('female');
+        const email = localStorage.getItem('email');
+        const upload = localStorage.getItem('upload');
+
+        // Display form data
+        document.getElementById('outputFirstName').textContent = firstName;
+        document.getElementById('outputMiddleName').textContent = middleName;
+        document.getElementById('outputLastName').textContent = lastName;
+        document.getElementById('outputBirthday').textContent = birthday;
+        document.getElementById('outputContact').textContent = contact;
+        document.getElementById('outputMale').textContent = male;
+        document.getElementById('outputFemale').textContent = female;
+        document.getElementById('outputEmail').textContent = email;
+        document.images .getElementById('outputUpload').images = upload;
+    </script>
+</body>
+</html>

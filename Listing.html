@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="dashh.css"/>
+    <title>Listing</title>
+</head>
+<body>
+        <main>
+            <div class="side">
+                 <ul>
+                   <li><a href="dashboard.html">Insert New Record</a></li><br><br>
+                   <li><a href="ViewRecords.html">View Records</a></li> <br><br>
+                   <li><a href="SchedPaymnts.html">Schedule and payments</a></li> <br><br>
+                  <li><a class="listingg" href="Listing.html">Listing</a></li> 
+                </ul>
+                </div>
+            </div>
+            <div class="containerInsert">
+                <div class="insertNew">
+                    <h1>Deceased Details</h1></div>
+                    <div class="detailss">
+                        <div class="form-container">
+                            <form id="myForm">
+                                <div class="form-group">
+                                    <label for="first-name">First Name:</label>
+                                    <input type="text" id="first-name" name="first-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="middle-name">Middle Name:</label>
+                                    <input type="text" id="middle-name" name="middle-name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name">Last Name:</label>
+                                    <input type="text" id="last-name" name="last-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="location">Location:</label>
+                                    <input type="text" id="location" name="location">
+                                </div>
+                                <div class="form-group">
+                                    <label for="born">Born:</label>
+                                    <input class="brn" type="date" id="born" name="born">
+                                </div>
+                                <div class="form-group">
+                                    <label for="died">Died:</label>
+                                    <input type="date" id="died" name="died">
+                                </div>
+                            </form>
+                            <div class="form-group">
+                                <div class="btnnn">
+                                  <button type="submit">Submit</button>
+                                  <button type="button" class="clear-button" onclick="document.getElementById('myForm').reset();">Clear</button>
+                              </div>
+                          </div>
+                        </div>
+                        
+                    </div>
+                
+            </div>
+        </main>
+    </div>
+</body>
+</html>

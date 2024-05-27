@@ -1,0 +1,123 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="forms.css"/>
+</head>
+<body>
+    <nav>
+        <div class="title">
+            <h1>Daet Catholic Cemetery</h1>
+        </div>
+        <div class="link-container">
+            <a class="link" href="loginpage.html">Home</a>
+            <a class="link" href="#">About Cemetery</a>
+            <a class="link" href="#">Contact Us</a>
+            <a class="link" href="Search.html">Search</a>
+            <a class="btn-link" href="forms.html">Log In</a>
+        </div>
+    </nav>
+    <div class="container">
+        <header>Daet Catholic Cemetery</header>
+        <p>Registration form</p>
+        <form id="registrationForm">
+            <div class="fields">
+                <div class="main-user-info">
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Enter First Name" required>
+                </div>
+                <div class="main-user-info">
+                    <label for="middleName">Middle Name:</label>
+                    <input type="text" id="middleName" name="middleName" placeholder="Enter Middle Name" required>
+                </div>
+                <div class="main-user-info">
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Enter Last Name" required>
+                </div>
+                <div class="main-user-info">
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" name="birthday" placeholder="Enter Birthday" required>
+                </div>
+                <div class="main-user-info">
+                    <label for="contact">Contact Number:</label>
+                    <input type="tel" id="contact" name="contact" placeholder="Enter Contact Number" required>
+                </div>
+                <div>
+                    <label>Gender:</label>
+                    <label><input type="radio" id="male" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" id="female" name="gender" value="female" required> Female</label>
+                </div>
+                <div class="main-user-info">
+                    <label  for="email">Email:</label>
+                    <input  type="email" id="email" name="email" placeholder="Enter Email" required>
+                </div>
+                <div class="main-user-info">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" placeholder="Enter Username" required>
+                </div>
+                <div class="main-user-info">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                </div>
+                <div class="main-user-info">
+                    <label for="validID">Upload Valid ID:</label>
+                    <input type="file" id="upload" name="upload" required>
+                </div>
+            </div>
+            <div class="quote">
+                <h6>By clicking Sign Up, you agree to our Terms, Privacy Policy and Cookies Policy.<br>You may receive SMS Notifications from us and can opt out any time.</h6>
+            </div>
+            <button class="signnnn" type="submit">Sign up</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
+    
+            // Get form data
+            const firstName = document.getElementById('firstName').value;
+            const middleName = document.getElementById('middleName').value;
+            const lastName = document.getElementById('lastName').value;
+            const birthday = document.getElementById('birthday').value;
+            const contact = document.getElementById('contact').value;
+            const gender = document.querySelector('input[name="gender"]:checked').value;
+            const email = document.getElementById('email').value;
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const upload = document.getElementById('upload').value;
+    
+            // Store form data in localStorage
+            localStorage.setItem('firstName', firstName);
+            localStorage.setItem('middleName', middleName);
+            localStorage.setItem('lastName', lastName);
+            localStorage.setItem('birthday', birthday);
+            localStorage.setItem('contact', contact);
+            localStorage.setItem('gender', gender);
+            localStorage.setItem('email', email);
+            localStorage.setItem('username', username);
+            localStorage.setItem('password', password);
+            localStorage.setItem('upload', upload);
+    
+            // Redirect to the login page
+            window.location.href = "usernamepage.html";
+        });
+    </script>
+
+    <footer>
+        <div id="contact">
+            <div class="footer-col">
+                <div class="container1">
+                    <p class="daett">Daet Catholoic<br>Cemetery Logo</p>
+                    <p class="visiting">Visting Hours<br><br>9:00am-6:00pm</p>
+                    <p class="Contactt">Contact<br><br>09123456789<br>0912345567</p>
+                    <p class="followw">Follow Us On Facebook<br><br>F. Pimentel Ave, Daet<br>4600 Camarines Norte</p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    </body>
+</html>
+

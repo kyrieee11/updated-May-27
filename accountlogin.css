@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: auto, center;
+}
+
+header{
+    display: inline-block;
+    width: 100%;
+    height: 80px;
+    flex-shrink: 0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+
+nav{
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #fff; 
+}
+
+.title {
+    font-family: "Dancing Script", cursive;
+    margin-left: 2%;
+
+}
+
+.link-container {
+    padding-inline: 22px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+   
+    
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 20px;
+    transition: 0.2s;
+}
+
+.link:hover {
+    color: #52CBDC;
+}
+
+.btn-link {
+    background-color: #52CBDC;
+    padding: 10px 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    border-radius: 15px;
+    color: aliceblue;
+    transition: 0.2s;
+    
+}
+
+.btn-link:hover {
+    color: black;
+}
+
+.login-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    margin-top: 5%;
+    margin-left: 39%;
+    background-color: white;
+}
+
+.login-form h2 {
+    font-size: 30px;
+    color: #333333;
+    text-align: center;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.form-group {
+    margin-bottom: 40px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #555555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: #e3dfdf;
+}
+
+button {
+    width: 50%;
+    padding: 10px;
+    margin-left: 80px;
+    background-color: #52CBDC;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #030303;
+}
+
+.create{
+    text-align: center; 
+    margin-top: 15px;
+}
+
+.create a{
+    text-decoration: none;
+    color: #52CBDC;
+    text-align: center;
+    justify-content: center;
+}
+.create a:hover{
+    color: #000000;
+    
+}
+.create h1{
+    color: #52CBDC;
+    font-size: 15px;
+}
+.create h1:hover{
+    color: #000000;
+    
+}
