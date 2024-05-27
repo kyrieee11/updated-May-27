@@ -39,7 +39,7 @@ nav{
     border-radius: 15px;
     color: aliceblue;
     transition: 0.2s;
-    margin-right: 2%;
+    
 }
 .btn-link:hover{
     background-color: #52CBDC;  
